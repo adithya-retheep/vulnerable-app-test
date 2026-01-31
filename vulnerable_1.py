@@ -1,4 +1,3 @@
-
 import os
 import sqlite3
 import yaml  # Insecure Dependency Usage: Using an old, vulnerable version of PyYAML
@@ -155,3 +154,5 @@ if __name__ == '__main__':
     # http://127.0.0.1:5000/search?query=<script>alert('XSS')</script>
     # http://127.0.0.1:5000/list_files?directory=.;%20echo%20'Command%20Injection'
     app.run(debug=True)
+
+# This is a new comment added to create a change.
