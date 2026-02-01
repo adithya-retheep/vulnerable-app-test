@@ -1,1 +1,7 @@
-checking
+import requests
+
+API_KEY = "sk_live_9f83jK2LmQxP123456789"  # Hardcoded secret ❌
+
+def get_balance():
+    headers = {"Authorization": f"Bearer {API_KEY}"}
+    return requests.get("https://api.bank.com/balance", headers=headers)
